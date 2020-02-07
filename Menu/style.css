@@ -41,7 +41,7 @@ body{
 }
 
 .menu ul li:hover {
-	background-color: green;	
+	background-color: black;	
 }
 
 .menu ul li:hover > ul{
@@ -90,11 +90,46 @@ body{
 }
 
 .panel-content{
-	border: 1px solid #fff;
+	border: 2px solid #fff;
+	box-shadow: 10px 10px 8px 10px #888888;
+	border-radius: 2px;
 	position: absolute;
 	width: 75%;
 	height: 85%;
 	right: 2%;
 	top: 10%;
+	background-color: #999999;
+	padding: 10px;
+}
+
+#popupContent {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+#popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 320px;
+	height: 140px;
+	padding: 20px;
+	border: solid 1px blue;
+	background: white;
+	text-align: center;
+	display: none;
+}
+
+table th, table{
+	text-align: center;
 	background-color: #fff;
 }

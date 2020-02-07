@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title></title>
+		<script src="script.js" type="text/javascript"></script>
+        <title>Home</title>
         <!--arquivo de estilos-->
         <link rel="stylesheet" href="style.css"/>
     </head>
-    <body>
+    <body onload='popup()'>
+	
+		<div class="panel-content">
+			
+		</div>
 	
 		<!-- Barra Seach -->		
 		<div class="search">
@@ -31,7 +37,7 @@
 			<ul>
 				<li><a href="#">Consultar itens</a>
 					<ul> 
-						<li><a href="#">Em estoque</a></li>
+						<li><a href="Estoque.html">Em estoque</a></li>
 						<li><a href="#">Em uso</a></li>
 						<li><a href="#">Por categorias</a></li>
 						<li><a href="#">Itens de Leasing</a></li>
@@ -55,13 +61,15 @@
 			</ul>
 		</div>
 		<div class="menu-space"></div>		
-		
-		<div class="panel-content">
-			
-		
+        
+		<!-- popup teste-->
+		<div id="popupContent">
+			<div id="popup">
+				<br /> Você deseja DAR BAIXA no material do estoque?<br />
+				<br /> <br />
+				<button>CONFIRMAR</button>
+				<button>CANCELAR</button>
+			</div>
 		</div>
-		
-        <!--arquivo de script-->
-        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
